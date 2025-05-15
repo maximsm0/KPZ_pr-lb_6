@@ -46,7 +46,11 @@
 
 - Cторінка перегляду:
 ![image](https://github.com/user-attachments/assets/c1316da4-deb0-4fcc-8528-1bf974d9c158)
-Кнопка Back to Posts повертає назад на сторінку колекції Post
+- Кнопка Back to Posts повертає назад на сторінку колекції Post
+- Після натискання кнопки "Edit Post", відкривається форма:  
+![image](https://github.com/user-attachments/assets/3b005e64-9b4f-4acb-91ea-e37e90e5f7e2)
+- Кнопка Update зберігає зміни та перенаправляє назад на деталі Post
+- Кнопка Cancel не зберігає ніякі зміни та перенаправляє назад на деталі Post
 ## - У режимі створення (/posts/new) реалізувати:
 - форму з порожніми полями для введення нових даних;
 - кнопку для збереження нового екземпляра (Create).
@@ -56,7 +60,7 @@
 ![image](https://github.com/user-attachments/assets/697b7fe7-58b5-4915-b395-400502ef81b0)  
 ![image](https://github.com/user-attachments/assets/1b98d7f9-d94a-4584-a375-74d36e9815a9)  
 ![image](https://github.com/user-attachments/assets/513ae8bc-cebb-4863-af58-7037580fff1e)  
-- Використовується mock-функція:  
+- Використовується mock-функція createEntity:  
 ![image](https://github.com/user-attachments/assets/e8921118-0b64-4c0a-ab7e-377219f20866)
 - Сторінка Create:
 ![image](https://github.com/user-attachments/assets/382e7716-5730-4d98-b3d1-0377b87abc68)
@@ -64,15 +68,8 @@
 ![image](https://github.com/user-attachments/assets/ddc03661-0768-4b96-a9d8-7ae3d3d0d6df)  
 ![image](https://github.com/user-attachments/assets/c508da43-bfc1-4fd8-a6f8-19003cc1a392)  
 - Після створення переправляє на сторінку колекції постів
-# Рекомендації
-- Використовуйте useEffect та useState для завантаження та оновлення даних.
-- Для створення нових елементів рекомендується використовувати окремий маршрут (/posts/new)
-- Забезпечте просту валідацію полів (наприклад, обов’язкові поля не можуть бути порожніми).
-- Для маршрутизації використовується TanStack Router.
-- Запити до бекенду мають емулюватися через виклики мок-функцій, таких як:  
-getAllEntities()  
-getEntityById(id)  
-createEntity(data)  
-updateEntity(id, data)  
-deleteEntity(id)  
-- Мок-функції мають бути винесені в окремий модуль і повертати дані у форматі, аналогічному відповіді майбутнього HTTP API.
+
+  
+- Для маршрутизації використовується TanStack Router:  
+![image](https://github.com/user-attachments/assets/7eea34b6-091d-44a7-97c0-68a6b94cbadc)
+
